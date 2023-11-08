@@ -1,0 +1,9 @@
+path: C:\Users\nikla\ikt213g23h\assignments\solutions\PCPartDetector\data
+train: 'train/images'
+val: 'validate/images'
+
+# class names
+names:
+  0: 'hdd'
+  1: 'ssd'
+  2: 'ram'
