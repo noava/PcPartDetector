@@ -1,4 +1,4 @@
-path: C:\Users\nikla\ikt213g23h\assignments\solutions\PCPartDetector\data
+path: C:\Users\nikla\Documents\UIA\IKT213\adri ny ny ny parts
 train: 'train/images'
 val: 'validate/images'
 
@@ -7,3 +7,5 @@ names:
   0: 'hdd'
   1: 'ssd'
   2: 'ram'
+  3: 'gpu'
+  4: 'hdd_L'

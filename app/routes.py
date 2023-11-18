@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = YOLO("C:/Users/nikla/ikt213g23h/assignments/solutions/PCPartDetector/runs/detect/train8/weights/best.pt").to(device)
-classNames = ["hdd", "ssd", "ram"]
+classNames = ["hdd", "ssd", "ram", "gpu", "hdd_L"]
 
 
 def detect_objects():
