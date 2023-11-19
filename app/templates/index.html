@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Flask App</title>
+    <title>PC Part Detector</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body>
     <div class="container">
-        <h1>PC Part Detector</h1>
-        <p>Click here to see the live camera view from our server. Which has an output of detected pc parts</p>
+        <h1 class="front-heading">PC Part Detector</h1>
+        <h2>Click here to view the live camera feed with detected PC parts.</h2>
         <a class="button" href="{{ url_for('detect') }}">Detect</a>
+        <div class ="bottom">
+            <text class="info-text">
+                A project using a web-based application for real-time identification and sorting of PC components using object detection.
+            </text>
+        </div>
     </div>
 </body>
 </html>

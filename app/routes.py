@@ -12,8 +12,8 @@ classNames = ["hdd", "ssd", "ram", "gpu", "hdd_L"]
 
 def detect_objects():
     cap = cv2.VideoCapture(1)
-    cap.set(3, 640)
-    cap.set(4, 480)
+    cap.set(3, 1920)
+    cap.set(4, 1080)
 
     while True:
         success, img = cap.read()

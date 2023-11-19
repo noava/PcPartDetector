@@ -2,13 +2,27 @@
 <html>
 <head>
     <title>Live Object Detection</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body>
     <div class="container">
-        <h1>Live Object Detection</h1>
-        <img src="{{ url_for('video_feed') }}" style="width: 100vh;" />
+        <a class="back-button" href="{{ url_for('index') }}"><i class="fas fa-arrow-left"></i>Go Back</a>
+        <h1>PC Parts Detection</h1>
+        <h2 id="loading-text">Loading Video Feed...</h2>
+        <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Live Feed Of PC Parts Detection" style="width: 100vh;" />
     </div>
+
+    <script>
+        // Simulate loading
+        document.getElementById('loading-text').style.display = 'block';
+
+        // Check if the video feed is loaded
+        document.getElementById('video-feed').onload = function() {
+            document.getElementById('loading-text').style.display = 'none';
+            document.getElementById('video-feed').style.display = 'block';
+        };
+    </script>
 </body>
 </html>
