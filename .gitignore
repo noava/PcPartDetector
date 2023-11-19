@@ -176,3 +176,5 @@ cython_debug/
 # This data is from the yolo training and detecting process.
 /runs
 
+# Private project files
+/keep
