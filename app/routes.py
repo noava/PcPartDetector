@@ -6,12 +6,12 @@ from app import app
 from ultralytics import YOLO
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = YOLO("C:/Users/nikla/ikt213g23h/assignments/solutions/PCPartDetector/runs/detect/train8/weights/best.pt").to(device)
+model = YOLO("C:/Users/adria/ikt213g23h/assignments/solutions/PCPartDetector/train106/weights/best.pt").to(device)
 classNames = ["hdd", "ssd", "ram", "gpu", "hdd_L"]
 
 
 def detect_objects():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     cap.set(3, 1920)
     cap.set(4, 1080)
 
