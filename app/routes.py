@@ -19,7 +19,6 @@ def detect_objects():
         success, img = cap.read()
         results = model(img, stream=True)
 
-        # Coordinates and drawing
         for r in results:
             boxes = r.boxes
 
